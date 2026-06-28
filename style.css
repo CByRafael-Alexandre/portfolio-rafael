@@ -1,0 +1,274 @@
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    position:sticky;
+    top:0;
+    background:#1f3c88;
+    padding:18px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+    z-index:1000;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:22px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#bcd7ff;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    padding:70px 0;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:2.5rem;
+    color:#1f3c88;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    font-size:1.2rem;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.destaque{
+    color:#2563eb;
+    font-weight:bold;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:25px;
+    background:#2563eb;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#1f3c88;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:360px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+
+/* ==========================
+   SEÇÕES
+========================== */
+
+section{
+    padding:70px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#1f3c88;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.card h3{
+    color:#1f3c88;
+    margin-bottom:12px;
+}
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+
+form{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    margin-top:20px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:14px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1f3c88;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#1f3c88;
+    color:#fff;
+    text-align:center;
+    padding:25px 0;
+    margin-top:40px;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+header .container{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-content{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-image img{
+    width:240px;
+}
+
+.hero-text h1{
+    font-size:2rem;
+}
+
+/* Link ativo do menu */
+
+nav a.ativo{
+    color:#9cc3ff;
+    border-bottom:2px solid white;
+    padding-bottom:4px;
+}
+
+}
